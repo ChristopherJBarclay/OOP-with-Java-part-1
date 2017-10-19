@@ -1,0 +1,22 @@
+public class Main {
+
+    public static void main(String[] args) {
+        // test your code here
+        MyDate myDate = new MyDate(1,7,2017);
+
+        System.out.println("Start Date: "+myDate);
+        myDate.advance();
+        System.out.println("After one day: "+myDate);
+
+        int count = 0;
+        while (count<30) {
+            myDate.advance();
+            System.out.println(myDate);
+            count++;
+        }
+
+        myDate.advance();
+        System.out.println("Final Date: "+myDate);
+
+    }
+}

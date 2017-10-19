@@ -1,0 +1,13 @@
+public class Main {
+
+    public static void main(String[] args) {
+        // write testcode here
+        MyDate myDate = new MyDate(7,1,2017);
+        MyDate comparedDate = new MyDate(1,12,2017);
+
+        System.out.println("Today's date: "+myDate);
+        System.out.println("Other date: "+comparedDate);
+        System.out.println("Difference in years: "+myDate.differenceInYears(comparedDate));
+        System.out.println("Is "+myDate+" earlier than "+comparedDate+"? "+myDate.earlier(comparedDate));
+    }
+}

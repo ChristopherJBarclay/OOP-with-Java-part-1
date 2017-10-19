@@ -34,14 +34,6 @@ public class NightSky {                     // do we need "void" and "static" ?
             } else {
                 System.out.print(" ");     // white space
             }
-
-
-            /*
-            if (r <= this.skyDensity) {                System.out.print("*");
-                this.starsInLastPrint++;
-            } else {
-                System.out.print(" ");
-            } */
         }
     }
 

@@ -1,0 +1,26 @@
+public class Player {
+    private String playerName;
+    private int numberOfGoals;
+
+    public Player(String name, int goals) {
+        this.playerName = name;
+        this.numberOfGoals = goals;
+    }
+
+    public Player(String name) {
+        this.playerName = name;
+        this.numberOfGoals = 0;
+    }
+
+    public String getName() {
+        return this.playerName;
+    }
+
+    public int goals() {
+        return this.numberOfGoals;
+    }
+
+    public String toString() {
+        return this.playerName+", goals "+this.numberOfGoals;
+    }
+}

@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+
+public class Team {
+    private ArrayList<Player> teamPlayers = new ArrayList<Player>();
+    private String teamName;
+    private int maxTeamSize;
+
+
+    public Team(String name) {
+        this.teamName=name;
+        this.maxTeamSize = 16;
+    }
+
+    public String getName() {
+        return this.teamName;
+    }
+
+    public void addPlayer(Player player) {
+
+        if (this.teamPlayers.size()>=this.maxTeamSize) {
+            // do not add if maxTeamSize has been reached
+        } else {
+            this.teamPlayers.add(player);		     //add the player to the arraylist
+        }
+    }
+
+    public void printPlayers() {
+        System.out.println("Team: "+this.teamName);
+
+        for (Player thisPlayer : this.teamPlayers) {
+            System.out.println("Player: "+thisPlayer);
+        }
+    }
+
+    public void setMaxSize(int maxSize) {
+        this.maxTeamSize = maxSize;
+    }
+
+    public int size() {
+        return this.teamPlayers.size();
+    }
+
+    public int goals() {
+        int numberOfGoals = 0;
+
+        for (Player player : teamPlayers) {
+            numberOfGoals+=player.goals();
+        }
+
+        return numberOfGoals;
+    }
+}

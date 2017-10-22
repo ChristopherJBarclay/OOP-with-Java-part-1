@@ -1,0 +1,31 @@
+public class DecreasingCounter {
+	private int value;		// object variable that remembers the value of counter
+	private int startValue;			// for 75.4
+
+
+	public DecreasingCounter(int valueAtStart) {
+		this.value = valueAtStart;
+		this.startValue = valueAtStart;
+	}
+
+	public void printValue() {
+		System.out.println("value: " + this.value);
+	}
+
+	public void decrease() {
+		// write here code to decrement value of counter by one
+
+		if (this.value>0) {		// 75.2
+			this.value--;		// 75.1
+		}
+	}
+	// and here the rest of the methods
+
+	public void reset() {			// for 75.3
+		this.value = 0;
+	}
+
+	public void setInitial() {		// for 75.4
+		this.value=startValue;
+	}
+}

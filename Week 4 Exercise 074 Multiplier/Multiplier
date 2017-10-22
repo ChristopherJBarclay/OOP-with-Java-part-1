@@ -1,0 +1,11 @@
+public class Multiplier {
+    private int myNumber;
+
+    public Multiplier(int number) {
+        this.myNumber = number;
+    }
+
+    public int multiply(int otherNumber) {
+        return otherNumber*this.myNumber;
+    }
+}

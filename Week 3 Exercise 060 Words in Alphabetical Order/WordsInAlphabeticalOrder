@@ -1,0 +1,33 @@
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class WordsInAlphabeticalOrder {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        // create here an ArrayList
+
+        ArrayList<String> words = new ArrayList<String>();
+        String typed = "start";
+
+        while (true) {
+            if (!(typed.equals(""))) {
+                System.out.print("Type a word: ");
+                typed = reader.nextLine();
+                words.add(typed);
+            } else {
+                break;
+            }
+        }
+        System.out.println("You typed the following words: ");
+        Collections.sort(words);
+
+        for (String word : words) {
+            System.out.println(word);
+        }
+
+    }
+}

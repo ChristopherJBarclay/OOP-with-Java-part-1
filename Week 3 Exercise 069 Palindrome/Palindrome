@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Palindromi {
+
+    public static void main(String[] args) {
+        Scanner reader = new Scanner(System.in);
+        
+        System.out.println("Type a text: ");
+        String text = reader.nextLine();    
+        if (palindrome(text)) {
+            System.out.println("The text is a palindrome!");
+        } else {
+            System.out.println("The text is not a palindrome!");
+        }
+    }
+
+    public static boolean palindrome(String text) {
+        String reversedText = "";
+        int num = 0;
+
+        while (num<text.length()) {
+            int backNum = ((text.length()-1)-num);
+            reversedText = reversedText + text.charAt(backNum);
+            num++;
+        }
+
+        if (text.equals(reversedText)) {
+            return true;
+        } else {
+            return false;
+        }
+    }

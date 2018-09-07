@@ -1,4 +1,4 @@
-# Object-Oriented-Programming-with-Java-part-1---University-of-Helsinki-mooc.fi-english
+# OOP with Java, part 1
 Object Oriented Programming with Java, part 1 - University of Helsinki @ mooc.fi/english
 ----------------------------------------------------------------------------------------
 This Repository is for the course: 

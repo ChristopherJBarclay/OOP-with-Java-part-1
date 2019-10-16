@@ -1,4 +1,3 @@
-import java.util.IntSummaryStatistics;
 import java.util.Scanner;
 
 public class LowerLimitAndUpperLimit {
@@ -7,13 +6,13 @@ public class LowerLimitAndUpperLimit {
         Scanner reader = new Scanner(System.in);
 
         System.out.print("First: ");
-        int number1 = Integer.parseInt(reader.nextLine());
+        int lowerLimit = Integer.parseInt(reader.nextLine());
         System.out.print("Second: ");
-        int number2 = Integer.parseInt(reader.nextLine());
-        int nowNumber = number1;
-        while (nowNumber <= number2) {
-            System.out.println(nowNumber);
-            nowNumber++;
+        int upperLimit = Integer.parseInt(reader.nextLine());
+        int number = lowerLimit;
+        while (number <= upperLimit) {
+            System.out.println(number);
+            number++;
         }
 
     }
